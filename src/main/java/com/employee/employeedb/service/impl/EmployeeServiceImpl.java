@@ -6,7 +6,9 @@ import com.employee.employeedb.exception.ResourceNotFoundException;
 import com.employee.employeedb.mapper.EmployeeMapper;
 import com.employee.employeedb.repository.EmployeeRepository;
 import com.employee.employeedb.service.EmployeeService;
+import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +18,9 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 
+    @Autowired
     private EmployeeRepository employeeRepository;
+
 
     @Override
     public EmployeeDto createEmployee(EmployeeDto employeeDto) {
