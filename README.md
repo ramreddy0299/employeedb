@@ -6,6 +6,7 @@ This is a simple **Employee Database REST API** built with **Spring Boot**. It a
 
 - Add new employees to the database.
 - Fetch all employees or specific employee by ID.
+- PostgreSQL Database Integration
 - Update employee details.
 - Delete employee records.
 - API documentation with **Swagger UI**.
